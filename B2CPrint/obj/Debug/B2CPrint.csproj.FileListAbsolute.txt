@@ -1,0 +1,6 @@
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\bin\B2CPrint.dll.config
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\bin\B2CPrint.dll
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\bin\B2CPrint.pdb
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\obj\Debug\B2CPrint.csprojResolveAssemblyReference.cache
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\obj\Debug\B2CPrint.dll
+C:\Users\Mars\Documents\WorkObj\B2C\B2CPrint\B2CPrint\obj\Debug\B2CPrint.pdb
