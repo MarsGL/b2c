@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -54,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="m\InsertProduct.aspx" />
+    <Content Include="m\InsertType.aspx" />
     <Content Include="m\SortManager.aspx" />
     <Content Include="m\css\admin_login.css" />
     <Content Include="m\css\common.css" />
@@ -93,6 +99,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\InsertProduct.aspx.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m\InsertProduct.aspx.designer.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\InsertType.aspx.cs">
+      <DependentUpon>InsertType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m\InsertType.aspx.designer.cs">
+      <DependentUpon>InsertType.aspx</DependentUpon>
     </Compile>
     <Compile Include="m\SortManager.aspx.cs">
       <DependentUpon>SortManager.aspx</DependentUpon>

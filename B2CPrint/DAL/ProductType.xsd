@@ -48,6 +48,14 @@
               <Mapping SourceColumn="TypeName" DataSetColumn="TypeName" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAddProductType" GetMethodModifier="Public" GetMethodName="GetDataByAddProductType" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAddProductType" UserSourceName="GetDataByAddProductType">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Id, TypeName FROM dbo.ProductType where parentid is null or parentid in (select id from producttype where parentid is null)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySort2" GetMethodModifier="Public" GetMethodName="GetDataBySort2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySort2" UserSourceName="GetDataBySort2">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
@@ -68,7 +76,7 @@
   <xs:element name="ProductType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProductType" msprop:Generator_UserDSName="ProductType">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_TablePropName="_ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_RowClassName="ProductTypeRow" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent">
+        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_TablePropName="_ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent" msprop:Generator_RowClassName="ProductTypeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
