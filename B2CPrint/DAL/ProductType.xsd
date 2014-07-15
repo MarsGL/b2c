@@ -56,6 +56,54 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByList_sort1" GeneratorSourceName="FillByList" GetMethodModifier="Public" GetMethodName="GetDataByList_sort1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByList_sort1" UserSourceName="GetDataByList_sort1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   Id, TypeName, '顶级类目' AS Expr1
+FROM      ProductType
+WHERE   (ParentId IS NULL)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByList_sort2" GetMethodModifier="Public" GetMethodName="GetDataByList_sort2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByList_sort2" UserSourceName="GetDataByList_sort2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   t1.Id, t1.TypeName, t2.TypeName AS Expr1, t2.Id AS Expr2
+FROM      ProductType AS t1 INNER JOIN
+                ProductType AS t2 ON t1.ParentId = t2.Id
+WHERE   (t1.Id NOT IN
+                    (SELECT   Id
+                     FROM      ProductType
+                     WHERE   (Id NOT IN
+                                         (SELECT   Id
+                                          FROM      ProductType AS ProductType_2
+                                          WHERE   (ParentId IS NULL) OR
+                                                          (ParentId IN
+                                                              (SELECT   Id
+                                                               FROM      ProductType AS ProductType_1
+                                                               WHERE   (ParentId IS NULL)))))))</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByList_sort3" GetMethodModifier="Public" GetMethodName="GetDataByList_sort3" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByList_sort3" UserSourceName="GetDataByList_sort3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   t1.Id, t1.TypeName, t2.TypeName AS Expr1, t2.Id AS Expr2
+FROM      ProductType AS t1 INNER JOIN
+                ProductType AS t2 ON t1.ParentId = t2.Id
+WHERE   (t1.Id NOT IN
+                    (SELECT   Id
+                     FROM      ProductType
+                     WHERE   (ParentId IN
+                                         (SELECT   Id
+                                          FROM      ProductType AS ProductType_1
+                                          WHERE   (ParentId IS NULL)))))</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="B2CPrint.dbo.ProductType" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySort2" GetMethodModifier="Public" GetMethodName="GetDataBySort2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySort2" UserSourceName="GetDataBySort2">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
@@ -65,6 +113,18 @@
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="B2CPrintConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateQuery">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [dbo].[ProductType] SET [TypeName] = @TypeName,[ParentId]=@ParentId WHERE (([Id] = @Original_Id))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="TypeName" ColumnName="TypeName" DataSourceName="B2CPrint.dbo.ProductType" DataTypeServer="nvarchar(500)" DbType="String" Direction="Input" ParameterName="@TypeName" Precision="0" ProviderType="NVarChar" Scale="0" Size="500" SourceColumn="TypeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="ParentId" ColumnName="ParentId" DataSourceName="B2CPrint.dbo.ProductType" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ParentId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ParentId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_Id" ColumnName="Id" DataSourceName="B2CPrint.dbo.ProductType" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
               </DbSource>
             </Sources>
           </TableAdapter>
@@ -76,7 +136,7 @@
   <xs:element name="ProductType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProductType" msprop:Generator_UserDSName="ProductType">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_TablePropName="_ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent" msprop:Generator_RowClassName="ProductTypeRow">
+        <xs:element name="ProductType" msprop:Generator_TableClassName="ProductTypeDataTable" msprop:Generator_TableVarName="tableProductType" msprop:Generator_RowChangedName="ProductTypeRowChanged" msprop:Generator_TablePropName="_ProductType" msprop:Generator_RowDeletingName="ProductTypeRowDeleting" msprop:Generator_RowChangingName="ProductTypeRowChanging" msprop:Generator_RowEvHandlerName="ProductTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductTypeRowDeleted" msprop:Generator_RowClassName="ProductTypeRow" msprop:Generator_UserTableName="ProductType" msprop:Generator_RowEvArgName="ProductTypeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />

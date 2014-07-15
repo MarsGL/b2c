@@ -7,7 +7,7 @@
                             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                             <asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><span>分类管理</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a><span class="crumb-step">&gt;</span><a href="#">商品管理</a><span class="crumb-step">&gt;</span><span>添加商品</span></div>
         </div>
         <div class="result-wrap">
             <div class="result-content">
@@ -19,7 +19,7 @@
                                 <asp:DropDownList ID="DropDownList1" runat="server" name="colId" CssClass="required" AutoPostBack="True"  DataTextField="TypeName" DataValueField="Id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnTextChanged="DropDownList1_SelectedIndexChanged">
                                   
                                 </asp:DropDownList>
-                                <asp:DropDownList ID="DropDownList2" runat="server" name="colId" CssClass="required" AutoPostBack="True"  DataTextField="TypeName" DataValueField="Id" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                                <asp:DropDownList ID="DropDownList2" runat="server" name="colId" CssClass="required" AutoPostBack="True"  DataTextField="TypeName" DataValueField="Id" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" OnDataBound="DropDownList2_DataBound">
                               
                                 </asp:DropDownList>
                                 <asp:DropDownList ID="DropDownList3" runat="server" name="colId" CssClass="required"  DataTextField="TypeName" DataValueField="Id">

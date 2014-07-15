@@ -13,6 +13,15 @@ namespace B2CPrint.m {
     public partial class AddSortList {
         
         /// <summary>
+        /// DropDownList_TypeList 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_TypeList;
+        
+        /// <summary>
         /// LinkButton_AddType 控件。
         /// </summary>
         /// <remarks>
@@ -20,6 +29,24 @@ namespace B2CPrint.m {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton_AddType;
+        
+        /// <summary>
+        /// ListType 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel ListType;
+        
+        /// <summary>
+        /// ListView1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView1;
         
         /// <summary>
         /// AddType 控件。
@@ -65,5 +92,32 @@ namespace B2CPrint.m {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource AddTypeSource;
+        
+        /// <summary>
+        /// TypeListSortSource1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource TypeListSortSource1;
+        
+        /// <summary>
+        /// TypeListSortSource2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource TypeListSortSource2;
+        
+        /// <summary>
+        /// TypeListSortSource3 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource TypeListSortSource3;
     }
 }

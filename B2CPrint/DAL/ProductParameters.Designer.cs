@@ -20,17 +20,17 @@ namespace B2CPrint.DAL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ProductType")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ProductParameters")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ProductType : global::System.Data.DataSet {
+    public partial class ProductParameters : global::System.Data.DataSet {
         
-        private ProductTypeDataTable tableProductType;
+        private ProductParametersDataTable tableProductParameters;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ProductType() {
+        public ProductParameters() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace B2CPrint.DAL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected ProductType(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ProductParameters(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace B2CPrint.DAL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["ProductType"] != null)) {
-                    base.Tables.Add(new ProductTypeDataTable(ds.Tables["ProductType"]));
+                if ((ds.Tables["ProductParameters"] != null)) {
+                    base.Tables.Add(new ProductParametersDataTable(ds.Tables["ProductParameters"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace B2CPrint.DAL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ProductTypeDataTable _ProductType {
+        public ProductParametersDataTable _ProductParameters {
             get {
-                return this.tableProductType;
+                return this.tableProductParameters;
             }
         }
         
@@ -127,7 +127,7 @@ namespace B2CPrint.DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ProductType cln = ((ProductType)(base.Clone()));
+            ProductParameters cln = ((ProductParameters)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace B2CPrint.DAL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["ProductType"] != null)) {
-                    base.Tables.Add(new ProductTypeDataTable(ds.Tables["ProductType"]));
+                if ((ds.Tables["ProductParameters"] != null)) {
+                    base.Tables.Add(new ProductParametersDataTable(ds.Tables["ProductParameters"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace B2CPrint.DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableProductType = ((ProductTypeDataTable)(base.Tables["ProductType"]));
+            this.tableProductParameters = ((ProductParametersDataTable)(base.Tables["ProductParameters"]));
             if ((initTable == true)) {
-                if ((this.tableProductType != null)) {
-                    this.tableProductType.InitVars();
+                if ((this.tableProductParameters != null)) {
+                    this.tableProductParameters.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace B2CPrint.DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ProductType";
+            this.DataSetName = "ProductParameters";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ProductType.xsd";
+            this.Namespace = "http://tempuri.org/ProductParameters.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableProductType = new ProductTypeDataTable();
-            base.Tables.Add(this.tableProductType);
+            this.tableProductParameters = new ProductParametersDataTable();
+            base.Tables.Add(this.tableProductParameters);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerialize_ProductType() {
+        private bool ShouldSerialize_ProductParameters() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace B2CPrint.DAL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ProductType ds = new ProductType();
+            ProductParameters ds = new ProductParameters();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,31 @@ namespace B2CPrint.DAL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void ProductTypeRowChangeEventHandler(object sender, ProductTypeRowChangeEvent e);
+        public delegate void ProductParametersRowChangeEventHandler(object sender, ProductParametersRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ProductTypeDataTable : global::System.Data.TypedTableBase<ProductTypeRow> {
+        public partial class ProductParametersDataTable : global::System.Data.TypedTableBase<ProductParametersRow> {
             
             private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnTypeName;
+            private global::System.Data.DataColumn columnParameterId;
+            
+            private global::System.Data.DataColumn columnParameterName;
+            
+            private global::System.Data.DataColumn columnSpecifications;
+            
+            private global::System.Data.DataColumn columnParentId;
+            
+            private global::System.Data.DataColumn columnImg;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeDataTable() {
-                this.TableName = "ProductType";
+            public ProductParametersDataTable() {
+                this.TableName = "ProductParameters";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +302,7 @@ namespace B2CPrint.DAL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ProductTypeDataTable(global::System.Data.DataTable table) {
+            internal ProductParametersDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,7 +319,7 @@ namespace B2CPrint.DAL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected ProductTypeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ProductParametersDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -326,9 +334,41 @@ namespace B2CPrint.DAL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TypeNameColumn {
+            public global::System.Data.DataColumn ParameterIdColumn {
                 get {
-                    return this.columnTypeName;
+                    return this.columnParameterId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ParameterNameColumn {
+                get {
+                    return this.columnParameterName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SpecificationsColumn {
+                get {
+                    return this.columnSpecifications;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ParentIdColumn {
+                get {
+                    return this.columnParentId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ImgColumn {
+                get {
+                    return this.columnImg;
                 }
             }
             
@@ -343,53 +383,57 @@ namespace B2CPrint.DAL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRow this[int index] {
+            public ProductParametersRow this[int index] {
                 get {
-                    return ((ProductTypeRow)(this.Rows[index]));
+                    return ((ProductParametersRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ProductTypeRowChangeEventHandler ProductTypeRowChanging;
+            public event ProductParametersRowChangeEventHandler ProductParametersRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ProductTypeRowChangeEventHandler ProductTypeRowChanged;
+            public event ProductParametersRowChangeEventHandler ProductParametersRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ProductTypeRowChangeEventHandler ProductTypeRowDeleting;
+            public event ProductParametersRowChangeEventHandler ProductParametersRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ProductTypeRowChangeEventHandler ProductTypeRowDeleted;
+            public event ProductParametersRowChangeEventHandler ProductParametersRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddProductTypeRow(ProductTypeRow row) {
+            public void AddProductParametersRow(ProductParametersRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRow AddProductTypeRow(string TypeName) {
-                ProductTypeRow rowProductTypeRow = ((ProductTypeRow)(this.NewRow()));
+            public ProductParametersRow AddProductParametersRow(int ParameterId, string ParameterName, string Specifications, string ParentId, string Img) {
+                ProductParametersRow rowProductParametersRow = ((ProductParametersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        TypeName};
-                rowProductTypeRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowProductTypeRow);
-                return rowProductTypeRow;
+                        ParameterId,
+                        ParameterName,
+                        Specifications,
+                        ParentId,
+                        Img};
+                rowProductParametersRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowProductParametersRow);
+                return rowProductParametersRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRow FindById(int Id) {
-                return ((ProductTypeRow)(this.Rows.Find(new object[] {
+            public ProductParametersRow FindById(int Id) {
+                return ((ProductParametersRow)(this.Rows.Find(new object[] {
                             Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ProductTypeDataTable cln = ((ProductTypeDataTable)(base.Clone()));
+                ProductParametersDataTable cln = ((ProductParametersDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,14 +441,18 @@ namespace B2CPrint.DAL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ProductTypeDataTable();
+                return new ProductParametersDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
-                this.columnTypeName = base.Columns["TypeName"];
+                this.columnParameterId = base.Columns["ParameterId"];
+                this.columnParameterName = base.Columns["ParameterName"];
+                this.columnSpecifications = base.Columns["Specifications"];
+                this.columnParentId = base.Columns["ParentId"];
+                this.columnImg = base.Columns["Img"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -412,8 +460,16 @@ namespace B2CPrint.DAL {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnTypeName = new global::System.Data.DataColumn("TypeName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTypeName);
+                this.columnParameterId = new global::System.Data.DataColumn("ParameterId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParameterId);
+                this.columnParameterName = new global::System.Data.DataColumn("ParameterName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParameterName);
+                this.columnSpecifications = new global::System.Data.DataColumn("Specifications", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSpecifications);
+                this.columnParentId = new global::System.Data.DataColumn("ParentId", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnParentId);
+                this.columnImg = new global::System.Data.DataColumn("Img", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnImg);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -422,36 +478,38 @@ namespace B2CPrint.DAL {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
-                this.columnTypeName.AllowDBNull = false;
-                this.columnTypeName.MaxLength = 500;
-                this.ExtendedProperties.Add("Generator_TablePropName", "_ProductType");
-                this.ExtendedProperties.Add("Generator_UserTableName", "ProductType");
+                this.columnParameterName.MaxLength = 500;
+                this.columnSpecifications.MaxLength = 1000;
+                this.columnParentId.MaxLength = 500;
+                this.columnImg.MaxLength = 500;
+                this.ExtendedProperties.Add("Generator_TablePropName", "_ProductParameters");
+                this.ExtendedProperties.Add("Generator_UserTableName", "ProductParameters");
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRow NewProductTypeRow() {
-                return ((ProductTypeRow)(this.NewRow()));
+            public ProductParametersRow NewProductParametersRow() {
+                return ((ProductParametersRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ProductTypeRow(builder);
+                return new ProductParametersRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ProductTypeRow);
+                return typeof(ProductParametersRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ProductTypeRowChanged != null)) {
-                    this.ProductTypeRowChanged(this, new ProductTypeRowChangeEvent(((ProductTypeRow)(e.Row)), e.Action));
+                if ((this.ProductParametersRowChanged != null)) {
+                    this.ProductParametersRowChanged(this, new ProductParametersRowChangeEvent(((ProductParametersRow)(e.Row)), e.Action));
                 }
             }
             
@@ -459,8 +517,8 @@ namespace B2CPrint.DAL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ProductTypeRowChanging != null)) {
-                    this.ProductTypeRowChanging(this, new ProductTypeRowChangeEvent(((ProductTypeRow)(e.Row)), e.Action));
+                if ((this.ProductParametersRowChanging != null)) {
+                    this.ProductParametersRowChanging(this, new ProductParametersRowChangeEvent(((ProductParametersRow)(e.Row)), e.Action));
                 }
             }
             
@@ -468,8 +526,8 @@ namespace B2CPrint.DAL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ProductTypeRowDeleted != null)) {
-                    this.ProductTypeRowDeleted(this, new ProductTypeRowChangeEvent(((ProductTypeRow)(e.Row)), e.Action));
+                if ((this.ProductParametersRowDeleted != null)) {
+                    this.ProductParametersRowDeleted(this, new ProductParametersRowChangeEvent(((ProductParametersRow)(e.Row)), e.Action));
                 }
             }
             
@@ -477,14 +535,14 @@ namespace B2CPrint.DAL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ProductTypeRowDeleting != null)) {
-                    this.ProductTypeRowDeleting(this, new ProductTypeRowChangeEvent(((ProductTypeRow)(e.Row)), e.Action));
+                if ((this.ProductParametersRowDeleting != null)) {
+                    this.ProductParametersRowDeleting(this, new ProductParametersRowChangeEvent(((ProductParametersRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveProductTypeRow(ProductTypeRow row) {
+            public void RemoveProductParametersRow(ProductParametersRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -493,7 +551,7 @@ namespace B2CPrint.DAL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ProductType ds = new ProductType();
+                ProductParameters ds = new ProductParameters();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -511,7 +569,7 @@ namespace B2CPrint.DAL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ProductTypeDataTable";
+                attribute2.FixedValue = "ProductParametersDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -555,37 +613,166 @@ namespace B2CPrint.DAL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ProductTypeRow : global::System.Data.DataRow {
+        public partial class ProductParametersRow : global::System.Data.DataRow {
             
-            private ProductTypeDataTable tableProductType;
+            private ProductParametersDataTable tableProductParameters;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ProductTypeRow(global::System.Data.DataRowBuilder rb) : 
+            internal ProductParametersRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableProductType = ((ProductTypeDataTable)(this.Table));
+                this.tableProductParameters = ((ProductParametersDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
                 get {
-                    return ((int)(this[this.tableProductType.IdColumn]));
+                    return ((int)(this[this.tableProductParameters.IdColumn]));
                 }
                 set {
-                    this[this.tableProductType.IdColumn] = value;
+                    this[this.tableProductParameters.IdColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TypeName {
+            public int ParameterId {
                 get {
-                    return ((string)(this[this.tableProductType.TypeNameColumn]));
+                    try {
+                        return ((int)(this[this.tableProductParameters.ParameterIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“ProductParameters”中列“ParameterId”的值为 DBNull。", e);
+                    }
                 }
                 set {
-                    this[this.tableProductType.TypeNameColumn] = value;
+                    this[this.tableProductParameters.ParameterIdColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ParameterName {
+                get {
+                    try {
+                        return ((string)(this[this.tableProductParameters.ParameterNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“ProductParameters”中列“ParameterName”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableProductParameters.ParameterNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Specifications {
+                get {
+                    try {
+                        return ((string)(this[this.tableProductParameters.SpecificationsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“ProductParameters”中列“Specifications”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableProductParameters.SpecificationsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ParentId {
+                get {
+                    try {
+                        return ((string)(this[this.tableProductParameters.ParentIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“ProductParameters”中列“ParentId”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableProductParameters.ParentIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Img {
+                get {
+                    try {
+                        return ((string)(this[this.tableProductParameters.ImgColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("表“ProductParameters”中列“Img”的值为 DBNull。", e);
+                    }
+                }
+                set {
+                    this[this.tableProductParameters.ImgColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParameterIdNull() {
+                return this.IsNull(this.tableProductParameters.ParameterIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParameterIdNull() {
+                this[this.tableProductParameters.ParameterIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParameterNameNull() {
+                return this.IsNull(this.tableProductParameters.ParameterNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParameterNameNull() {
+                this[this.tableProductParameters.ParameterNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSpecificationsNull() {
+                return this.IsNull(this.tableProductParameters.SpecificationsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSpecificationsNull() {
+                this[this.tableProductParameters.SpecificationsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsParentIdNull() {
+                return this.IsNull(this.tableProductParameters.ParentIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetParentIdNull() {
+                this[this.tableProductParameters.ParentIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsImgNull() {
+                return this.IsNull(this.tableProductParameters.ImgColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetImgNull() {
+                this[this.tableProductParameters.ImgColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -593,22 +780,22 @@ namespace B2CPrint.DAL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class ProductTypeRowChangeEvent : global::System.EventArgs {
+        public class ProductParametersRowChangeEvent : global::System.EventArgs {
             
-            private ProductTypeRow eventRow;
+            private ProductParametersRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRowChangeEvent(ProductTypeRow row, global::System.Data.DataRowAction action) {
+            public ProductParametersRowChangeEvent(ProductParametersRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ProductTypeRow Row {
+            public ProductParametersRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -624,7 +811,7 @@ namespace B2CPrint.DAL {
         }
     }
 }
-namespace B2CPrint.DAL.ProductTypeTableAdapters {
+namespace B2CPrint.DAL.ProductParametersTableAdapters {
     
     
     /// <summary>
@@ -636,7 +823,7 @@ namespace B2CPrint.DAL.ProductTypeTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ProductTypeTableAdapter : global::System.ComponentModel.Component {
+    public partial class ProductParametersTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -650,7 +837,7 @@ namespace B2CPrint.DAL.ProductTypeTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ProductTypeTableAdapter() {
+        public ProductParametersTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -747,26 +934,41 @@ namespace B2CPrint.DAL.ProductTypeTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ProductType";
+            tableMapping.DataSetTable = "ProductParameters";
             tableMapping.ColumnMappings.Add("Id", "Id");
-            tableMapping.ColumnMappings.Add("TypeName", "TypeName");
+            tableMapping.ColumnMappings.Add("ParameterId", "ParameterId");
+            tableMapping.ColumnMappings.Add("ParameterName", "ParameterName");
+            tableMapping.ColumnMappings.Add("Specifications", "Specifications");
+            tableMapping.ColumnMappings.Add("ParentId", "ParentId");
+            tableMapping.ColumnMappings.Add("Img", "Img");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[ProductType] WHERE (([Id] = @Original_Id))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[ProductParameters] WHERE (([Id] = @Original_Id))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ProductType] ([TypeName]) VALUES (@TypeName)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[ProductParameters] ([ParameterId], [ParameterName], [Specifica" +
+                "tions], [ParentId], [Img]) VALUES (@ParameterId, @ParameterName, @Specifications" +
+                ", @ParentId, @Img)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TypeName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TypeName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParameterId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParameterId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParameterName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParameterName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specifications", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specifications", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentId", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Img", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Img", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[ProductType] SET [TypeName] = @TypeName WHERE (([Id] = @Original_Id" +
-                "))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[ProductParameters] SET [ParameterId] = @ParameterId, [ParameterName" +
+                "] = @ParameterName, [Specifications] = @Specifications, [ParentId] = @ParentId, " +
+                "[Img] = @Img WHERE (([Id] = @Original_Id))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TypeName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TypeName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParameterId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParameterId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParameterName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParameterName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Specifications", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Specifications", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentId", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ParentId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Img", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Img", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -780,71 +982,26 @@ namespace B2CPrint.DAL.ProductTypeTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[7];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, TypeName FROM dbo.ProductType where parentid is null";
+            this._commandCollection[0].CommandText = "SELECT Id, ParameterId, ParameterName, Specifications, ParentId, Img FROM dbo.Pro" +
+                "ductParameters";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Id, TypeName FROM dbo.ProductType where parentid is null or parentid in (s" +
-                "elect id from producttype where parentid is null)";
+            this._commandCollection[1].CommandText = "SELECT Id, ParameterName, Specifications, Img,(select dbo.typeParameters.Paramete" +
+                "rName from dbo.typeParameters where dbo.typeParameters.Id=ParameterId) as TypeNa" +
+                "me FROM dbo.ProductParameters where ParameterId =@id";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT   Id, TypeName, \'顶级类目\' AS Expr1\r\nFROM      ProductType\r\nWHERE   (ParentId " +
-                "IS NULL)";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"SELECT   t1.Id, t1.TypeName, t2.TypeName AS Expr1, t2.Id AS Expr2
-FROM      ProductType AS t1 INNER JOIN
-                ProductType AS t2 ON t1.ParentId = t2.Id
-WHERE   (t1.Id NOT IN
-                    (SELECT   Id
-                     FROM      ProductType
-                     WHERE   (Id NOT IN
-                                         (SELECT   Id
-                                          FROM      ProductType AS ProductType_2
-                                          WHERE   (ParentId IS NULL) OR
-                                                          (ParentId IN
-                                                              (SELECT   Id
-                                                               FROM      ProductType AS ProductType_1
-                                                               WHERE   (ParentId IS NULL)))))))";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = @"SELECT   t1.Id, t1.TypeName, t2.TypeName AS Expr1, t2.Id AS Expr2
-FROM      ProductType AS t1 INNER JOIN
-                ProductType AS t2 ON t1.ParentId = t2.Id
-WHERE   (t1.Id NOT IN
-                    (SELECT   Id
-                     FROM      ProductType
-                     WHERE   (ParentId IN
-                                         (SELECT   Id
-                                          FROM      ProductType AS ProductType_1
-                                          WHERE   (ParentId IS NULL)))))";
-            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "SELECT Id, TypeName FROM dbo.ProductType where parentid=@id";
-            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ParentId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "UPDATE [dbo].[ProductType] SET [TypeName] = @TypeName,[ParentId]=@ParentId WHERE " +
-                "(([Id] = @Original_Id))";
-            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TypeName", global::System.Data.SqlDbType.NVarChar, 500, global::System.Data.ParameterDirection.Input, 0, 0, "TypeName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ParentId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ParentId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ParameterId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ProductType.ProductTypeDataTable dataTable) {
+        public virtual int Fill(ProductParameters.ProductParametersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -857,9 +1014,9 @@ WHERE   (t1.Id NOT IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ProductType.ProductTypeDataTable GetData() {
+        public virtual ProductParameters.ProductParametersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
+            ProductParameters.ProductParametersDataTable dataTable = new ProductParameters.ProductParametersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -868,59 +1025,15 @@ WHERE   (t1.Id NOT IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ProductType.ProductTypeDataTable GetDataByAddProductType() {
+        public virtual ProductParameters.ProductParametersDataTable GetDataByProductParameters(global::System.Nullable<int> id) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ProductType.ProductTypeDataTable GetDataByList_sort1() {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ProductType.ProductTypeDataTable GetDataByList_sort2() {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ProductType.ProductTypeDataTable GetDataByList_sort3() {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ProductType.ProductTypeDataTable GetDataBySort2(global::System.Nullable<int> id) {
-            this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((id.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(id.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            ProductType.ProductTypeDataTable dataTable = new ProductType.ProductTypeDataTable();
+            ProductParameters.ProductParametersDataTable dataTable = new ProductParameters.ProductParametersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -928,15 +1041,15 @@ WHERE   (t1.Id NOT IN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ProductType.ProductTypeDataTable dataTable) {
+        public virtual int Update(ProductParameters.ProductParametersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ProductType dataSet) {
-            return this.Adapter.Update(dataSet, "ProductType");
+        public virtual int Update(ProductParameters dataSet) {
+            return this.Adapter.Update(dataSet, "ProductParameters");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -969,10 +1082,6 @@ WHERE   (t1.Id NOT IN
                 int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
                 return returnValue;
             }
-                catch
-            {
-                return 0;
-            }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     this.Adapter.DeleteCommand.Connection.Close();
@@ -984,12 +1093,36 @@ WHERE   (t1.Id NOT IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string TypeName) {
-            if ((TypeName == null)) {
-                throw new global::System.ArgumentNullException("TypeName");
+        public virtual int Insert(global::System.Nullable<int> ParameterId, string ParameterName, string Specifications, string ParentId, string Img) {
+            if ((ParameterId.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ParameterId.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(TypeName));
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((ParameterName == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(ParameterName));
+            }
+            if ((Specifications == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Specifications));
+            }
+            if ((ParentId == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ParentId));
+            }
+            if ((Img == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Img));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1011,14 +1144,38 @@ WHERE   (t1.Id NOT IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string TypeName, int Original_Id) {
-            if ((TypeName == null)) {
-                throw new global::System.ArgumentNullException("TypeName");
+        public virtual int Update(global::System.Nullable<int> ParameterId, string ParameterName, string Specifications, string ParentId, string Img, int Original_Id) {
+            if ((ParameterId.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ParameterId.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(TypeName));
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_Id));
+            if ((ParameterName == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(ParameterName));
+            }
+            if ((Specifications == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Specifications));
+            }
+            if ((ParentId == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(ParentId));
+            }
+            if ((Img == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Img));
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1034,42 +1191,6 @@ WHERE   (t1.Id NOT IN
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateQuery(string TypeName, global::System.Nullable<int> ParentId, int Original_Id) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[6];
-            if ((TypeName == null)) {
-                throw new global::System.ArgumentNullException("TypeName");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(TypeName));
-            }
-            if ((ParentId.HasValue == true)) {
-                command.Parameters[1].Value = ((int)(ParentId.Value));
-            }
-            else {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            command.Parameters[2].Value = ((int)(Original_Id));
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
     }
     
     /// <summary>
@@ -1084,7 +1205,7 @@ WHERE   (t1.Id NOT IN
         
         private UpdateOrderOption _updateOrder;
         
-        private ProductTypeTableAdapter _productTypeTableAdapter;
+        private ProductParametersTableAdapter _productParametersTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1106,12 +1227,12 @@ WHERE   (t1.Id NOT IN
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public ProductTypeTableAdapter ProductTypeTableAdapter {
+        public ProductParametersTableAdapter ProductParametersTableAdapter {
             get {
-                return this._productTypeTableAdapter;
+                return this._productParametersTableAdapter;
             }
             set {
-                this._productTypeTableAdapter = value;
+                this._productParametersTableAdapter = value;
             }
         }
         
@@ -1134,9 +1255,9 @@ WHERE   (t1.Id NOT IN
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._productTypeTableAdapter != null) 
-                            && (this._productTypeTableAdapter.Connection != null))) {
-                    return this._productTypeTableAdapter.Connection;
+                if (((this._productParametersTableAdapter != null) 
+                            && (this._productParametersTableAdapter.Connection != null))) {
+                    return this._productParametersTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1151,7 +1272,7 @@ WHERE   (t1.Id NOT IN
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._productTypeTableAdapter != null)) {
+                if ((this._productParametersTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1163,14 +1284,14 @@ WHERE   (t1.Id NOT IN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(ProductType dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ProductParameters dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._productTypeTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet._ProductType.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._productParametersTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet._ProductParameters.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._productTypeTableAdapter.Update(updatedRows));
+                    result = (result + this._productParametersTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1182,13 +1303,13 @@ WHERE   (t1.Id NOT IN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(ProductType dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ProductParameters dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._productTypeTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet._ProductType.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._productParametersTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet._ProductParameters.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._productTypeTableAdapter.Update(addedRows));
+                    result = (result + this._productParametersTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1200,13 +1321,13 @@ WHERE   (t1.Id NOT IN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(ProductType dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ProductParameters dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._productTypeTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet._ProductType.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._productParametersTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet._ProductParameters.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._productTypeTableAdapter.Update(deletedRows));
+                    result = (result + this._productParametersTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1242,15 +1363,15 @@ WHERE   (t1.Id NOT IN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(ProductType dataSet) {
+        public virtual int UpdateAll(ProductParameters dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._productTypeTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._productTypeTableAdapter.Connection) == false))) {
+            if (((this._productParametersTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._productParametersTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("由 TableAdapterManager 管理的所有 TableAdapter 必须使用相同的连接字符串。");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
@@ -1284,13 +1405,13 @@ WHERE   (t1.Id NOT IN
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._productTypeTableAdapter != null)) {
-                    revertConnections.Add(this._productTypeTableAdapter, this._productTypeTableAdapter.Connection);
-                    this._productTypeTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._productTypeTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._productTypeTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._productTypeTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._productTypeTableAdapter.Adapter);
+                if ((this._productParametersTableAdapter != null)) {
+                    revertConnections.Add(this._productParametersTableAdapter, this._productParametersTableAdapter.Connection);
+                    this._productParametersTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._productParametersTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._productParametersTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._productParametersTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._productParametersTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1351,9 +1472,9 @@ WHERE   (t1.Id NOT IN
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._productTypeTableAdapter != null)) {
-                    this._productTypeTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._productTypeTableAdapter]));
-                    this._productTypeTableAdapter.Transaction = null;
+                if ((this._productParametersTableAdapter != null)) {
+                    this._productParametersTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._productParametersTableAdapter]));
+                    this._productParametersTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

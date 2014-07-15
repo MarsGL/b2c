@@ -45,9 +45,9 @@
                         <li>
                             <a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
                             <ul class="sub-menu">
-                                <li><a href="design.html"><i class="icon-font">&#xe019;</i>商品管理</a></li>
+                                <li><a href="ProductManager.aspx"><i class="icon-font">&#xe019;</i>商品管理</a></li>
                                 <li><a href="design.html"><i class="icon-font">&#xe005;</i>模板管理</a></li>
-                                <li><a href="design.html"><i class="icon-font">&#xe006;</i>分类管理</a></li>
+                                <li><a href="SortManager.aspx"><i class="icon-font">&#xe006;</i>分类管理</a></li>
                                 <li><a href="design.html"><i class="icon-font">&#xe004;</i>留言管理</a></li>
                                 <li><a href="design.html"><i class="icon-font">&#xe012;</i>评论管理</a></li>
                                 <li><a href="design.html"><i class="icon-font">&#xe052;</i>友情链接</a></li>

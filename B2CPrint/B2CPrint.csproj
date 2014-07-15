@@ -58,8 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="m\InsertParameters.aspx" />
     <Content Include="m\InsertProduct.aspx" />
     <Content Include="m\InsertType.aspx" />
+    <Content Include="m\ProductManager.aspx" />
     <Content Include="m\SortManager.aspx" />
     <Content Include="m\css\admin_login.css" />
     <Content Include="m\css\common.css" />
@@ -88,10 +90,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\ProductParameters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductParameters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ProductType.cs">
+      <DependentUpon>ProductType.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DAL\ProductType.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProductType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TypeParameters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeParameters.xsd</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +115,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\InsertParameters.aspx.cs">
+      <DependentUpon>InsertParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m\InsertParameters.aspx.designer.cs">
+      <DependentUpon>InsertParameters.aspx</DependentUpon>
     </Compile>
     <Compile Include="m\InsertProduct.aspx.cs">
       <DependentUpon>InsertProduct.aspx</DependentUpon>
@@ -113,6 +136,13 @@
     </Compile>
     <Compile Include="m\InsertType.aspx.designer.cs">
       <DependentUpon>InsertType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="m\ProductManager.aspx.cs">
+      <DependentUpon>ProductManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m\ProductManager.aspx.designer.cs">
+      <DependentUpon>ProductManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="m\SortManager.aspx.cs">
       <DependentUpon>SortManager.aspx</DependentUpon>
@@ -162,6 +192,17 @@
     <Content Include="DAL\ProductType.xsc">
       <DependentUpon>ProductType.xsd</DependentUpon>
     </Content>
+    <Content Include="DAL\ProductParameters.xsc">
+      <DependentUpon>ProductParameters.xsd</DependentUpon>
+    </Content>
+    <None Include="DAL\ProductParameters.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductParameters.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DAL\ProductParameters.xss">
+      <DependentUpon>ProductParameters.xsd</DependentUpon>
+    </Content>
     <None Include="DAL\ProductType.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -169,6 +210,17 @@
     </None>
     <Content Include="DAL\ProductType.xss">
       <DependentUpon>ProductType.xsd</DependentUpon>
+    </Content>
+    <Content Include="DAL\TypeParameters.xsc">
+      <DependentUpon>TypeParameters.xsd</DependentUpon>
+    </Content>
+    <None Include="DAL\TypeParameters.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TypeParameters.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DAL\TypeParameters.xss">
+      <DependentUpon>TypeParameters.xsd</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
